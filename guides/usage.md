@@ -38,6 +38,9 @@ Below that, you can optionally write a description for the marker.
 
 Finally, press the "Add marker" button at the bottom of the form to save your changes and add the marker to the map.
 
+#### Marker geolocation data
+After you add your marker, Cartes.io will automatically fill in the geocoded details if they were not provided, such as the elevation, textually formatted address, and other details. It can take anywhere from a few seconds to a few hours depending on load and the number of markers you have. You'll see a live notification in the bottom when the app has updated the marker with the geocoded details.
+
 ### Seeing marker details
 
 Click on a marker to open the popup with the marker's details.
@@ -54,3 +57,7 @@ To delete the map, click on the "Map settings" button towards the bottom right c
 
 ### Upload markers from a GPX file
 If you have the permission to `create markers in bulk` (email us to request it), you can upload a GPX file to create a lot of markers on the map at once.
+
+## Developing with Cartes.io
+
+See the [API reference](/developers/api/) for information on how to use the Cartes.io API, and the [iFrame embedding](/developers/iframe/) guide for information on how to embed maps on your website.
