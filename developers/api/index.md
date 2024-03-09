@@ -118,6 +118,9 @@ GET /api/maps?query=markers.category.name~shark
 ##### format
 When requesting markers with the `with` query parameter, you can also choose to pass `format=geojson` to return the markers in GeoJSON format.
 
+```http
+GET /api/maps?with[]=markers&format=geojson
+```
 ### Search all public maps
 
 ```http
