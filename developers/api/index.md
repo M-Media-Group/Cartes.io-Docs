@@ -83,7 +83,8 @@ GET /api/maps?ids[]=048eebe4-8dac-46e2-a947-50b6b8062fec
 ```
 
 ##### category_ids
-Get the public maps that contain the listed category ids.
+Get the public maps that contain the listed category ids. Note that each additional category ID will widen the search (its treated as a logical OR).
+
 ```http
 GET /api/maps?category_ids[]=1
 ```
