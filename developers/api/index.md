@@ -134,13 +134,13 @@ GET /api/maps/search?q=xxx
 POST /api/maps
 ```
 
-| Parameter                   | Type     | Rules                                           | Required | Description                                     |
-| :-------------------------- | :------- | :---------------------------------------------- | :------- | :---------------------------------------------- |
-| `title`                     | `string` | Max: 191                                        | -        | The title of the map                            |
-| `slug`                      | `string` | Max: 255                                        | -        | The map slug. Currently un-used                 |
-| `description `              | `string` | -                                               | -        | The description of the map and its purpose      |
-| `privacy`                   | `string` | Must be one of: `public`, `unlisted`, `private` | -        | The privacy level of the map                    |
-| `users_can_create_markers ` | `string` | Must be one of: `yes`, `no`, `only_logged_in`   | -        | The setting that defines who can create markers |
+| Parameter                   | Type     | Rules                                           | Required | Description                                                                                                                                                                                                                                           |
+| :-------------------------- | :------- | :---------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `title`                     | `string` | Max: 191                                        | -        | The title of the map                                                                                                                                                                                                                                  |
+| `slug`                      | `string` | Max: 255                                        | -        | The map slug. Currently un-used                                                                                                                                                                                                                       |
+| `description `              | `string` | -                                               | -        | The description of the map and its purpose                                                                                                                                                                                                            |
+| `privacy`                   | `string` | Must be one of: `public`, `unlisted`, `private` | -        | The privacy level of the map                                                                                                                                                                                                                          |
+| `users_can_create_markers ` | `string` | Must be one of: `yes`, `no`, `only_logged_in`   | -        | The setting that defines who can create markers. Note, you can always create markers on your own map. Any users you explicitly add to your map with the right permissions will also be able to create markers on your map regardless of this setting. |
 
 If you're unauthenticated, you will be limited as to how many maps you can create per day.
 
