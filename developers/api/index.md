@@ -239,6 +239,38 @@ If your map is associated to your Cartes.io account and you'd like to make it an
 DELETE /api/maps/{map-uuid}/claim
 ```
 
+### Add additional users to a map
+
+If your map is associated to your Cartes.io account and you'd like to add additional users to it, you can use this endpoint. A valid API token is required to use this endpoint. This is useful if your map is private and you'd like to share it with one or more specific users using Cartes.io.
+
+```http
+POST /api/maps/{map-uuid}/users
+```
+
+You need to pass the `username` of the user you'd like to add to the map. If the user does not exist, you will get an error.
+
+If you want the user to be able to create markers on the map, you can additionally pass `can_create_markers` as `true`. By default, the user will not be able to create markers.
+
+### Remove a user from a map
+
+If your map is associated to your Cartes.io account and you'd like to remove a user from it, you can use this endpoint. A valid API token is required to use this endpoint.
+
+```http
+DELETE /api/maps/{map-uuid}/users/{username}
+```
+
+This will remove the user from the map, and they will no longer be able to access your map if it is private. The markers they created will remain on the map.
+
+### List users added to a map
+
+If your map is associated to your Cartes.io account and you'd like to list the users added to it, you can use this endpoint. A valid API token is required to use this endpoint.
+
+```http
+GET /api/maps/{map-uuid}/users
+```
+
+Only the map owner can list the users added to the map.
+
 ## Markers
 
 ### Get all markers on a map
@@ -435,6 +467,22 @@ N/A
 ### Delete a single category
 
 N/A
+
+## Users
+
+### Get all public users
+
+```http
+GET /api/users
+```
+
+### Get a single public user
+
+```http
+GET /api/users/{username}
+```
+
+You can pass the `with` query parameter to expand the response with `maps, maps.markers, contributions`.
 
 ## User
 The following endpoints require authentication with a valid API token.
