@@ -251,6 +251,8 @@ You need to pass the `username` of the user you'd like to add to the map. If the
 
 If you want the user to be able to create markers on the map, you can additionally pass `can_create_markers` as `true`. By default, the user will not be able to create markers.
 
+If you attempt to add a user to a map that is already added, you will get an error with the status code `409`.
+
 ### Remove a user from a map
 
 If your map is associated to your Cartes.io account and you'd like to remove a user from it, you can use this endpoint. A valid API token is required to use this endpoint.
