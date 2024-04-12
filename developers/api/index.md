@@ -7,7 +7,7 @@ API base:
 https://cartes.io/
 ```
 
-Note: to get back a response in JSON - you must pass the `Accept: application/json` header.
+Note: you must pass the `Accept: application/json` header for the API to work as expected.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/1513231-878108cf-8607-4f3f-b4ca-a765aa88373a?action=collection%2Ffork&collection-url=entityId%3D1513231-878108cf-8607-4f3f-b4ca-a765aa88373a%26entityType%3Dcollection%26workspaceId%3Dcd5491f6-b311-4c12-b4a6-a2de8280cb58)
 
