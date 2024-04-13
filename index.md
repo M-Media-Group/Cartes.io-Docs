@@ -21,8 +21,8 @@ features:
   - title: iFrame embedding
     details: Embed any public or unlisted map on your website
     link: /developers/iframe/
-  - title: Go to web-app
-    details: Start creating maps from the app now
-    link: https://app.cartes.io
+  - title: Join our Discord
+    details: Get help on our Discord
+    link: https://discord.gg/GXP663Rw2W
 ---
 
